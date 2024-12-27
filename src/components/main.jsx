@@ -6,7 +6,6 @@ import theme from "../themes/theme"
 import { useSafeAreaInsets } from "react-native-safe-area-context"
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: theme.background.mainBackgroundColor,
   },
 })
