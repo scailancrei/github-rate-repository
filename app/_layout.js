@@ -1,10 +1,10 @@
 import { View, Text } from "react-native"
-import { Slot } from "expo-router"
+import { Stack } from "expo-router"
 
 export default function Layout() {
   return (
-    <View>
-      <Slot />
+    <View style={{ height: "100%" }}>
+      <Stack />
     </View>
   )
 }

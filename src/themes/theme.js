@@ -7,6 +7,7 @@ const theme = {
   },
   background: {
     mainBackgroundColor: "#e1e4e8",
+    formBackgroundColor: "#5f9ea0",
     appBarColor: "#24292e",
   },
   fontSizes: {
@@ -15,6 +16,8 @@ const theme = {
   },
   fonts: {
     main: "System",
+    ios: "Arial",
+    android: "Roboto",
   },
   fontWeights: {
     normal: "400",
