@@ -60,7 +60,7 @@ const RepositoryList = () => {
         <FlatList
           data={REPOSITORIES}
           ItemSeparatorComponent={ItemSeparator}
-          contentContainerStyle={{ paddingBottom: 40 }}
+          contentContainerStyle={{ paddingBottom: 150 }}
           keyExtractor={(item) => item.id}
           renderItem={({ item, index }) => (
             <RepositoryAnimatedItem item={item} index={index} />

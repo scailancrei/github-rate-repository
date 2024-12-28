@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   text: {
     flex: 0.5,
-    flexGrow: 0.8,
+    flexShrink: 1,
   },
 
   rate: {
