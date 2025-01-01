@@ -1,17 +1,20 @@
 import { StatusBar } from "expo-status-bar"
 import { Platform, StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from "react-native-safe-area-context"
+import { ApolloProvider } from "@apollo/client"
 import Main from "./src/components/main"
-import theme from "./src/themes/theme"
+import client from "./src/graphql/client"
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <View style={styles.container}>
-        <Main />
-        <StatusBar style="light" />
-      </View>
-    </SafeAreaProvider>
+    <ApolloProvider client={client}>
+      <SafeAreaProvider>
+        <View style={styles.container}>
+          <Main />
+          <StatusBar style="light" />
+        </View>
+      </SafeAreaProvider>
+    </ApolloProvider>
   )
 }
 
