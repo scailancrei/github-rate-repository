@@ -5,10 +5,13 @@ import theme from "../themes/theme"
 
 export default function InputController({
   control,
+  autoCapitalize,
   name,
   rules,
+  keyboardType,
   errors,
   secureTextEntry,
+  textContentType,
   placeholder,
   defaultValue,
   holderColor,
@@ -21,9 +24,12 @@ export default function InputController({
         rules={rules}
         render={({ field: { onChange, onBlur, value } }) => (
           <TextInput
+            autoCapitalize={autoCapitalize}
             style={styles.input}
             secureTextEntry={secureTextEntry}
+            keyboardType={keyboardType}
             placeholder={placeholder}
+            textContentType={textContentType}
             placeholderTextColor={holderColor}
             onBlur={onBlur}
             onChangeText={onChange}
