@@ -1,7 +1,6 @@
-import { View, StyleSheet, Pressable } from "react-native"
-import Form from "../src/components/forms"
-
+import { View, StyleSheet } from "react-native"
 import theme from "../src/themes/theme"
+import LoginForm from "../src/components/loginForm"
 
 export default function SignIn() {
   const styles = StyleSheet.create({
@@ -16,6 +15,7 @@ export default function SignIn() {
       color: theme.colors.links,
     },
   })
+
   return (
     <View style={styles.container}>
       <View
@@ -26,7 +26,7 @@ export default function SignIn() {
           justifyContent: "center",
         }}
       >
-        <Form />
+        <LoginForm />
       </View>
     </View>
   )

@@ -9,10 +9,10 @@ const ItemSeparator = () => <View style={styles.separator} />
 const RepositoryList = () => {
   const { data, loading, error } = useQuery(GET_REPOSITORIES)
   const repositories = data?.allRepositories
+
   return (
     <View style={styles.container}>
-      <ActivityIndicator />
-      {loading ? (
+      {loading && <ActivityIndicator /> ? (
         <Text>Loading...</Text>
       ) : (
         <FlatList
